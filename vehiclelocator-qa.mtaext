@@ -1,0 +1,14 @@
+_schema-version: "3.1"
+ID: vehicleLocator.qa
+extends: vehicleLocator
+
+modules:
+ - name: vehicleLocator_Node
+   parameters:
+      host: qa-vehiclelocator-node
+ - name: vehicleLocator
+   parameters:
+      host: qa-vehiclelocator
+ - name: vehicleLocator_XSJS
+   parameters:
+      host: qa-vehiclelocator-xsjs
