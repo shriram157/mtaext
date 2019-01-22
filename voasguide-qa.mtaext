@@ -1,6 +1,6 @@
 _schema-version: "3.1"
-ID: vehicleLocator.qa
-extends: vehicleLocator
+ID: VOASGuide.qa
+extends: VOASGuide
 
 modules:
  - name: voasGuide_Node
