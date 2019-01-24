@@ -5,7 +5,7 @@ extends: VOASGuide
 modules:
  - name: voasGuide_Node
    parameters:
-      host: qa-voasguide-node
+      host: qas-voasguide-node
  - name: VOASGuide
    parameters:
-      host: qa-voasguide
+      host: qas-voasguide
