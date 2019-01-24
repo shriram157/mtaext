@@ -1,0 +1,11 @@
+_schema-version: "3.1"
+ID: pipelineInventory.qa
+extends: pipelineInventory
+
+modules:
+ - name: pipelineInventory_node
+   parameters:
+      host: qa-pipelineinventory-node
+ - name: pipelineInventory
+   parameters:
+      host: qa-pipelineinventory
