@@ -1,0 +1,11 @@
+_schema-version: "3.1"
+ID: claimsSystemProcessing.qa
+extends: claimsSystemProcessing
+
+modules:
+ - name: claimSystemProcessing_Node
+   parameters:
+      host: qas-claimsystemprocessing-node
+ - name: claimSystemProcessing
+   parameters:
+      host: qas-claimsystemprocessing
