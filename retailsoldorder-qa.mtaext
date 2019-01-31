@@ -1,0 +1,11 @@
+_schema-version: "3.1"
+ID: retailSoldOrder.qa
+extends: retailSoldOrder
+
+modules:
+ - name: retailSoldOrder_Node
+   parameters:
+      host: qa-soldorder-node
+ - name: soldOrder
+   parameters:
+      host: qa-soldOrder
