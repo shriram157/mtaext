@@ -1,0 +1,11 @@
+_schema-version: "3.1"
+ID: partsAvailability.qa
+extends: partsAvailability
+
+modules:
+ - name: partsAvailability_node
+   parameters:
+      host: qas-partsavailability-node
+ - name: partsAvailability
+   parameters:
+      host: qas-partsavailability
