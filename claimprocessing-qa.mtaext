@@ -5,7 +5,7 @@ extends: claimsSystemProcessing
 modules:
  - name: claimSystemProcessing_Node
    parameters:
-      host: qas-claimsystemprocessing-node
+      host: tci-qas-claims-node
  - name: claimSystemProcessing
    parameters:
-      host: qas-claimsystemprocessing
+      host: tci-qas-claims

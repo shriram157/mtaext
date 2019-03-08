@@ -5,7 +5,7 @@ extends: partsAvailability
 modules:
  - name: partsAvailability_node
    parameters:
-      host: qas-partsavailability-node
+      host: tci-qas-partsavailability-node
  - name: partsAvailability
    parameters:
-      host: qas-partsavailability
+      host: tci-qas-partsavailability

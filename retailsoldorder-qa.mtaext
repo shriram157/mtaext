@@ -5,7 +5,7 @@ extends: retailSoldOrder
 modules:
  - name: retailSoldOrder_Node
    parameters:
-      host: qa-soldorder-node
+      host: tci-qas-soldorderandpp-node
  - name: soldOrder
    parameters:
-      host: qa-soldOrder
+      host: tci-qas-soldorderandpp

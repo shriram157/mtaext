@@ -5,7 +5,7 @@ extends: pipelineInventory
 modules:
  - name: pipelineInventory_node
    parameters:
-      host: tci-sap-qa-qa-pipelineinventory-node
+      host: tci-qas-pipelineetaandinvsummary-node
  - name: pipelineInventory
    parameters:
-      host: tci-sap-qa-qa-pipelineinventory
+      host: tci-qas-pipelineetaandinvsummary

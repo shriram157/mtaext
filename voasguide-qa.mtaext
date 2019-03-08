@@ -1,11 +1,11 @@
 _schema-version: "3.1"
-ID: VOASGuide.qa
-extends: VOASGuide
+ID: vehiclecatalogue.qa
+extends: vehiclecatalogue
 
 modules:
- - name: voasGuide_Node
+ - name: vehiclecatalogue-node
    parameters:
-      host: qas-voasguide-node
- - name: VOASGuide
+      host: tci-qas-${app-name}
+ - name: vehiclecatalogue
    parameters:
-      host: qas-voasguide
+      host: tci-qas-${app-name}

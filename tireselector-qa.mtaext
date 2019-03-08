@@ -1,0 +1,14 @@
+_schema-version: "3.1"
+ID: tireSelector.qa
+extends: tireSelector
+
+modules:
+ - name: tireSelector_Node
+   parameters:
+      host: tci-qas-tirecentre-node
+ - name: tireSelector_XSJS
+   parameters:
+      host: tci-qas-tirecentre-xsjs
+ - name: tireSelector
+   parameters:
+      host: tci-qas-tirecentre

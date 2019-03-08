@@ -1,14 +1,14 @@
 _schema-version: "3.1"
-ID: vehicleLocator.qa
-extends: vehicleLocator
+ID: vehiclelocatorandtrade.qa
+extends: vehiclelocatorandtrade
 
 modules:
- - name: vehicleLocator_Node
+ - name: vehiclelocatorandtrade-node
    parameters:
-      host: qa-vehiclelocator-node
- - name: vehicleLocator
+      host: tci-qas-${app-name}
+ - name: vehiclelocatorandtrade-xsjs
    parameters:
-      host: qa-vehiclelocator
- - name: vehicleLocator_XSJS
+      host: tci-qas-${app-name}
+ - name: vehiclelocatorandtrade
    parameters:
-      host: qa-vehiclelocator-xsjs
+      host: tci-qas-${app-name}

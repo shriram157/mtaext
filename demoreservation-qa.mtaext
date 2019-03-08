@@ -1,11 +1,11 @@
 _schema-version: "3.1"
-ID: ecpSales.qa
-extends: ecpSales
+ID: demoreservation.qa
+extends: demoreservation
 
 modules:
- - name: ecpSales_Node
+ - name: demoreservation-node
    parameters:
       host: tci-qas-${app-name}
- - name: ecpSales
+ - name: demoreservation
    parameters:
       host: tci-qas-${app-name}
