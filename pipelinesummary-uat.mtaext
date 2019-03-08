@@ -1,11 +1,11 @@
 _schema-version: "3.1"
-ID: pipelineInventory.qas
+ID: pipelineInventory.uat
 extends: pipelineInventory
 
 modules:
  - name: pipelineInventory_node
    parameters:
-      host: tci-qas-pipelineetaandinvsummary-node
+      host: tci-uat-pipelineetaandinvsummary-node
  - name: pipelineInventory
    parameters:
-      host: tci-qas-pipelineetaandinvsummary
+      host: tci-uat-pipelineetaandinvsummary

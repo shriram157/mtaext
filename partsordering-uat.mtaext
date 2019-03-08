@@ -1,11 +1,11 @@
 _schema-version: "3.1"
-ID: partsOrdering.qas
+ID: partsOrdering.uat
 extends: partsOrdering
 
 modules:
  - name: partsOrdering_node
    parameters:
-      host: tci-qas-partsordering-node
+      host: tci-uat-partsordering-node
  - name: partsOrdering
    parameters:
-      host: tci-qas-partsordering
+      host: tci-uat-partsordering

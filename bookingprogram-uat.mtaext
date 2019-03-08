@@ -1,17 +1,17 @@
 _schema-version: "3.1"
-ID: bookingProgram.qas
+ID: bookingProgram.uat
 extends: bookingProgram
 
 modules:
   - name: bookingProgram_odataV4
     parameters:
-      host: tci-qas-bookingprogram-odatav4
+      host: tci-uat-bookingprogram-odatav4
   - name: bookingProgram_xsjs
     parameters:
-      host: tci-qas-bookingprogram-xsjs
+      host: tci-uat-bookingprogram-xsjs
   - name: bookingProgram_node
     parameters:
-      host: tci-qas-bookingprogram-node
+      host: tci-uat-bookingprogram-node
   - name: bookingProgram
     parameters:
-      host: tci-qas-bookingprogram
+      host: tci-uat-bookingprogram

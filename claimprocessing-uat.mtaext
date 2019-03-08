@@ -1,11 +1,11 @@
 _schema-version: "3.1"
-ID: claimsSystemProcessing.qas
+ID: claimsSystemProcessing.uat
 extends: claimsSystemProcessing
 
 modules:
  - name: claimSystemProcessing_Node
    parameters:
-      host: tci-qas-claims-node
+      host: tci-uat-claims-node
  - name: claimSystemProcessing
    parameters:
-      host: tci-qas-claims
+      host: tci-uat-claims

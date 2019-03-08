@@ -1,11 +1,11 @@
 _schema-version: "3.1"
-ID: partsAvailability.qas
+ID: partsAvailability.uat
 extends: partsAvailability
 
 modules:
  - name: partsAvailability_node
    parameters:
-      host: tci-qas-partsavailability-node
+      host: tci-uat-partsavailability-node
  - name: partsAvailability
    parameters:
-      host: tci-qas-partsavailability
+      host: tci-uat-partsavailability

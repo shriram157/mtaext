@@ -1,11 +1,11 @@
 _schema-version: "3.1"
-ID: retailSoldOrder.qas
+ID: retailSoldOrder.uat
 extends: retailSoldOrder
 
 modules:
  - name: retailSoldOrder_Node
    parameters:
-      host: tci-qas-soldorderandpp-node
+      host: tci-uat-soldorderandpp-node
  - name: soldOrder
    parameters:
-      host: tci-qas-soldorderandpp
+      host: tci-uat-soldorderandpp

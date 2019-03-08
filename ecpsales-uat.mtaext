@@ -1,11 +1,11 @@
 _schema-version: "3.1"
-ID: ecpSales.qas
+ID: ecpSales.uat
 extends: ecpSales
 
 modules:
  - name: ecpSales_Node
    parameters:
-      host: tci-qas-${app-name}
+      host: tci-uat-${app-name}
  - name: ecpSales
    parameters:
-      host: tci-qas-${app-name}
+      host: tci-uat-${app-name}

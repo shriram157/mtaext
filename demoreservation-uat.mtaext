@@ -1,11 +1,11 @@
 _schema-version: "3.1"
-ID: demoreservation.qas
+ID: demoreservation.uat
 extends: demoreservation
 
 modules:
  - name: demoreservation-node
    parameters:
-      host: tci-qas-${app-name}
+      host: tci-uat-${app-name}
  - name: demoreservation
    parameters:
-      host: tci-qas-${app-name}
+      host: tci-uat-${app-name}
