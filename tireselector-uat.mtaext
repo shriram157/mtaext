@@ -5,10 +5,10 @@ extends: tireSelector
 modules:
  - name: tireSelector_Node
    parameters:
-      host: tci-uat-tirecentre-node
+      host: tci-uat-tireselector-node
  - name: tireSelector_XSJS
    parameters:
-      host: tci-uat-tirecentre-xsjs
+      host: tci-uat-tireselector-xsjs
  - name: tireSelector
    parameters:
-      host: tci-uat-tirecentre
+      host: tci-uat-tireselector
