@@ -1,3 +1,17 @@
 _schema-version: "3.1"
 ID: bookingProgram.dev
 extends: bookingProgram
+
+modules:
+  - name: bookingProgram_odataV4
+    parameters:
+      host: tci-dev-bookingprogram-odatav4
+  - name: bookingProgram_xsjs
+    parameters:
+      host: tci-dev-bookingprogram-xsjs
+  - name: bookingProgram_node
+    parameters:
+      host: tci-dev-bookingprogram-node
+  - name: bookingProgram
+    parameters:
+      host: tci-dev-bookingprogram
