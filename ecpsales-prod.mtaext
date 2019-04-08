@@ -1,0 +1,11 @@
+_schema-version: "3.1"
+ID: ecpSales.prod
+extends: ecpSales
+
+modules:
+ - name: ecpSales_Node
+   parameters:
+      host: tci-${app-name}
+ - name: ecpSales
+   parameters:
+      host: tci-${app-name}

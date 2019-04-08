@@ -1,0 +1,11 @@
+_schema-version: "3.1"
+ID: partsAvailability.prod
+extends: partsAvailability
+
+modules:
+ - name: partsAvailability_node
+   parameters:
+      host: tci-partsavailability-node
+ - name: partsAvailability
+   parameters:
+      host: tci-partsavailability
