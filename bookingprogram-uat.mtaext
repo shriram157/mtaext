@@ -3,15 +3,15 @@ ID: bookingProgram.uat
 extends: bookingProgram
 
 modules:
-  - name: bookingProgram_odataV4
-    parameters:
+ - name: bookingProgram_odataV4
+   parameters:
       host: tci-uat-bookingprogram-odatav4
-  - name: bookingProgram_xsjs
-    parameters:
+ - name: bookingProgram_xsjs
+   parameters:
       host: tci-uat-bookingprogram-xsjs
-  - name: bookingProgram_node
-    parameters:
+ - name: bookingProgram_node
+   parameters:
       host: tci-uat-bookingprogram-node
-  - name: bookingProgram
-    parameters:
+ - name: bookingProgram
+   parameters:
       host: tci-uat-bookingprogram
