@@ -1,0 +1,12 @@
+_schema-version: "3.1"
+ID: central.qas
+extends: central
+
+modules:
+ - name: central
+   parameters:
+      host: tci-qas-central
+   properties:
+      APP_HOSTS: tci-qas-ecpsales,tci-qas-partsavailability,tci-qas-soldorderandpp
+      APP_DOMAIN: .cfapps.us10.hana.ondemand.com
+      UAA_URL: https://sapqa.authentication.us10.hana.ondemand.com

@@ -1,0 +1,12 @@
+_schema-version: "3.1"
+ID: central.uat
+extends: central
+
+modules:
+ - name: central
+   parameters:
+      host: tci-uat-central
+   properties:
+      APP_HOSTS: tci-uat-ecpsales,tci-uat-partsavailability,tci-uat-soldorderandpp
+      APP_DOMAIN: .cfapps.us10.hana.ondemand.com
+      UAA_URL: https://sap-uat.authentication.us10.hana.ondemand.com
