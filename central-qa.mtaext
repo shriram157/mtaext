@@ -8,6 +8,6 @@ modules:
       host: qas-central
       domain: scp.toyota.ca
    properties:
-      APP_HOSTS: qas-partsavailability
-      APP_DOMAIN: scp.toyota.ca
+      APP_HOSTS: qas-partsavailability,qas-partsordering
+      APP_DOMAIN: .scp.toyota.ca
       UAA_URL: https://sapqa.authentication.us10.hana.ondemand.com
