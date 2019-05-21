@@ -5,8 +5,9 @@ extends: central
 modules:
  - name: central
    parameters:
-      host: tci-qas-central
+      host: qas-central
+      domain: scp.toyota.ca
    properties:
-      APP_HOSTS: tci-qas-ecpsales,tci-qas-partsavailability,tci-qas-soldorderandpp
-      APP_DOMAIN: .cfapps.us10.hana.ondemand.com
+      APP_HOSTS: qas-partsavailability
+      APP_DOMAIN: scp.toyota.ca
       UAA_URL: https://sapqa.authentication.us10.hana.ondemand.com
