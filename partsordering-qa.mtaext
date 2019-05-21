@@ -5,7 +5,17 @@ extends: partsOrdering
 modules:
  - name: partsOrdering_node
    parameters:
-      host: tci-qas-partsordering-node
+      host: qas-partsordering-node
+      domain: scp.toyota.ca
  - name: partsOrdering
    parameters:
-      host: tci-qas-partsordering
+      host: qas-partsordering
+      domain: scp.toyota.ca
+
+resources:
+ - name: uaa_partsOrdering
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://qas-partsordering.scp.toyota.ca
