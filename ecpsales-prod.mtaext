@@ -5,7 +5,17 @@ extends: ecpSales
 modules:
  - name: ecpSales_Node
    parameters:
-      host: tci-${app-name}
+      host: ecpsales-node
+      domain: scp.toyota.ca
  - name: ecpSales
    parameters:
-      host: tci-${app-name}
+      host: ecpsales
+      domain: scp.toyota.ca
+
+resources:
+ - name: uaa_ecpSales
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://ecpsales.scp.toyota.ca

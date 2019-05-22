@@ -5,7 +5,17 @@ extends: demoreservation
 modules:
  - name: demoreservation-node
    parameters:
-      host: tci-${app-name}
+      host: demoreservation-node
+      domain: scp.toyota.ca
  - name: demoreservation
    parameters:
-      host: tci-${app-name}
+      host: demoreservation
+      domain: scp.toyota.ca
+
+resources:
+ - name: uaa_demoreservation
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://demoreservation.scp.toyota.ca

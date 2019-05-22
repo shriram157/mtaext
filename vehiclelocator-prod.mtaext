@@ -5,10 +5,21 @@ extends: vehiclelocatorandtrade
 modules:
  - name: vehiclelocatorandtrade-node
    parameters:
-      host: tci-${app-name}
+      host: vehiclelocatorandtrade-node
+      domain: scp.toyota.ca
  - name: vehiclelocatorandtrade-xsjs
    parameters:
-      host: tci-${app-name}
+      host: vehiclelocatorandtrade-xsjs
+      domain: scp.toyota.ca
  - name: vehiclelocatorandtrade
    parameters:
-      host: tci-${app-name}
+      host: vehiclelocatorandtrade
+      domain: scp.toyota.ca
+
+resources:
+ - name: uaa_vehiclelocatorandtrade
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://vehiclelocatorandtrade.scp.toyota.ca
