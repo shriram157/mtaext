@@ -5,7 +5,7 @@ extends: demoreservation
 modules:
  - name: demoreservation-node
    parameters:
-      host: tci-qas-${app-name}
+      host: tci-qas-demoreservation-node
  - name: demoreservation
    parameters:
-      host: tci-qas-${app-name}
+      host: tci-qas-demoreservation

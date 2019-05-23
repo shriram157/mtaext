@@ -5,10 +5,10 @@ extends: vehiclecatalogue
 modules:
  - name: vehiclecatalogue-node
    parameters:
-      host: tci-dev-${app-name}
+      host: tci-dev-vehiclecatalogue-node
    properties:
       MOCK_USER_MODE: true
       MOCK_USER_ORIGIN: d36z7bqhz1-GSR-Neo-to-CF
  - name: vehiclecatalogue
    parameters:
-      host: tci-dev-${app-name}
+      host: tci-dev-vehiclecatalogue

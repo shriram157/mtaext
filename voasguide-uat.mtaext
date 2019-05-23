@@ -5,7 +5,7 @@ extends: vehiclecatalogue
 modules:
  - name: vehiclecatalogue-node
    parameters:
-      host: tci-uat-${app-name}
+      host: tci-uat-vehiclecatalogue-node
  - name: vehiclecatalogue
    parameters:
-      host: tci-uat-${app-name}
+      host: tci-uat-vehiclecatalogue

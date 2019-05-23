@@ -5,10 +5,10 @@ extends: vehiclelocatorandtrade
 modules:
  - name: vehiclelocatorandtrade-node
    parameters:
-      host: tci-qas-${app-name}
+      host: tci-qas-vehiclelocatorandtrade-node
  - name: vehiclelocatorandtrade-xsjs
    parameters:
-      host: tci-qas-${app-name}
+      host: tci-qas-vehiclelocatorandtrade-xsjs
  - name: vehiclelocatorandtrade
    parameters:
-      host: tci-qas-${app-name}
+      host: tci-qas-vehiclelocatorandtrade

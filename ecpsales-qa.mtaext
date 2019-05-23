@@ -5,7 +5,7 @@ extends: ecpSales
 modules:
  - name: ecpSales_Node
    parameters:
-      host: tci-qas-${app-name}
+      host: tci-qas-ecpsales-node
  - name: ecpSales
    parameters:
-      host: tci-qas-${app-name}
+      host: tci-qas-ecpsales

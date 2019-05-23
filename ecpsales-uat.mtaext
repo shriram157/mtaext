@@ -5,7 +5,7 @@ extends: ecpSales
 modules:
  - name: ecpSales_Node
    parameters:
-      host: tci-uat-${app-name}
+      host: tci-uat-ecpsales-node
  - name: ecpSales
    parameters:
-      host: tci-uat-${app-name}
+      host: tci-uat-ecpsales

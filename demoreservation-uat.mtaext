@@ -5,7 +5,7 @@ extends: demoreservation
 modules:
  - name: demoreservation-node
    parameters:
-      host: tci-uat-${app-name}
+      host: tci-uat-demoreservation-node
  - name: demoreservation
    parameters:
-      host: tci-uat-${app-name}
+      host: tci-uat-demoreservation
