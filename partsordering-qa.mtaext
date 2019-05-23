@@ -18,5 +18,5 @@ resources:
       config:
          oauth2-configuration:
             redirect-uris:
-               - https://qas-partsordering.scp.toyota.ca
+               - https://qas-partsordering.scp.toyota.ca/login/callback
                - https://qas-central.scp.toyota.ca/central/logged-out.html
