@@ -22,4 +22,4 @@ resources:
       config:
          oauth2-configuration:
             redirect-uris:
-               - https://vehiclelocatorandtrade.scp.toyota.ca
+               - https://vehiclelocatorandtrade.scp.toyota.ca/login/callback

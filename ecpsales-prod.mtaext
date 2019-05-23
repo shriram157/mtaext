@@ -18,4 +18,4 @@ resources:
       config:
          oauth2-configuration:
             redirect-uris:
-               - https://ecpsales.scp.toyota.ca
+               - https://ecpsales.scp.toyota.ca/login/callback

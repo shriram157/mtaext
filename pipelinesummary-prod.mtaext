@@ -18,4 +18,4 @@ resources:
       config:
          oauth2-configuration:
             redirect-uris:
-               - https://pipelineetaandinvsummary.scp.toyota.ca
+               - https://pipelineetaandinvsummary.scp.toyota.ca/login/callback

@@ -26,4 +26,4 @@ resources:
       config:
          oauth2-configuration:
             redirect-uris:
-               - https://bookingprogram.scp.toyota.ca
+               - https://bookingprogram.scp.toyota.ca/login/callback
