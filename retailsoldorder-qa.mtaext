@@ -5,7 +5,17 @@ extends: retailSoldOrder
 modules:
  - name: retailSoldOrder_Node
    parameters:
-      host: tci-qas-soldorderandpp-node
+      host: qas-soldorderandpp-node
+      domain: scp.toyota.ca
  - name: soldOrder
    parameters:
-      host: tci-qas-soldorderandpp
+      host: qas-soldorderandpp
+      domain: scp.toyota.ca
+
+resources:
+ - name: uaa_retailSoldOrder
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://qas-soldorderandpp.scp.toyota.ca/login/callback

@@ -5,13 +5,25 @@ extends: bookingProgram
 modules:
  - name: bookingProgram_odataV4
    parameters:
-      host: tci-uat-bookingprogram-odatav4
+      host: uat-bookingprogram-odatav4
+      domain: scp.toyota.ca
  - name: bookingProgram_xsjs
    parameters:
-      host: tci-uat-bookingprogram-xsjs
+      host: uat-bookingprogram-xsjs
+      domain: scp.toyota.ca
  - name: bookingProgram_node
    parameters:
-      host: tci-uat-bookingprogram-node
+      host: uat-bookingprogram-node
+      domain: scp.toyota.ca
  - name: bookingProgram
    parameters:
-      host: tci-uat-bookingprogram
+      host: uat-bookingprogram
+      domain: scp.toyota.ca
+
+resources:
+ - name: uaa_bookingProgram
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://uat-bookingprogram.scp.toyota.ca/login/callback

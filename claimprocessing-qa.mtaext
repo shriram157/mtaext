@@ -5,7 +5,17 @@ extends: claimsSystemProcessing
 modules:
  - name: claimSystemProcessing_Node
    parameters:
-      host: tci-qas-claims-node
+      host: qas-claims-node
+      domain: scp.toyota.ca
  - name: claimSystemProcessing
    parameters:
-      host: tci-qas-claims
+      host: qas-claims
+      domain: scp.toyota.ca
+
+resources:
+ - name: uaa_claimsSystemProcessing
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://qas-claims.scp.toyota.ca/login/callback

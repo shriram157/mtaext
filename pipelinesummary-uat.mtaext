@@ -5,7 +5,17 @@ extends: pipelineInventory
 modules:
  - name: pipelineInventory_node
    parameters:
-      host: tci-uat-pipelineetaandinvsummary-node
+      host: uat-pipelineetaandinvsummary-node
+      domain: scp.toyota.ca
  - name: pipelineInventory
    parameters:
-      host: tci-uat-pipelineetaandinvsummary
+      host: uat-pipelineetaandinvsummary
+      domain: scp.toyota.ca
+
+resources:
+ - name: uaa_pipelineInventory
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://uat-pipelineetaandinvsummary.scp.toyota.ca/login/callback

@@ -5,7 +5,17 @@ extends: partsOrdering
 modules:
  - name: partsOrdering_node
    parameters:
-      host: tci-uat-partsordering-node
+      host: uat-partsordering-node
+      domain: scp.toyota.ca
  - name: partsOrdering
    parameters:
-      host: tci-uat-partsordering
+      host: uat-partsordering
+      domain: scp.toyota.ca
+
+resources:
+ - name: uaa_partsOrdering
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://uat-partsordering.scp.toyota.ca/login/callback
