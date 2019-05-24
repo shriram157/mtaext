@@ -8,6 +8,13 @@ modules:
       host: qas-central
       domain: scp.toyota.ca
    properties:
-      APP_HOSTS: qas-partsavailability,qas-partsordering
+      APP_HOSTS: qas-bookingprogram,qas-claims,qas-demoreservation,qas-ecpsales,qas-partsavailability,qas-partsordering,qas-pipelineetaandinvsummary,qas-soldorderandpp,qas-stockallocation,qas-tireselector,qas-vehiclelocatorandtrade,qas-vehiclecatalogue
       APP_DOMAIN: .scp.toyota.ca
-      UAA_URL: https://sapqa.authentication.us10.hana.ondemand.com
+
+resources:
+ - name: uaa_central
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://qas-central.scp.toyota.ca/central/logged-out.html

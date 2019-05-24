@@ -1,0 +1,20 @@
+_schema-version: "3.1"
+ID: central.dev
+extends: central
+
+modules:
+ - name: central
+   parameters:
+      host: dev-central
+      domain: scp.toyota.ca
+   properties:
+      APP_HOSTS: dev-bookingprogram,dev-claims,dev-demoreservation,dev-ecpsales,dev-partsavailability,dev-partsordering,dev-pipelineetaandinvsummary,dev-soldorderandpp,dev-stockallocation,dev-tireselector,dev-vehiclelocatorandtrade,dev-vehiclecatalogue
+      APP_DOMAIN: .scp.toyota.ca
+
+resources:
+ - name: uaa_central
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://dev-central.scp.toyota.ca/central/logged-out.html
