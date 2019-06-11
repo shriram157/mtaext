@@ -11,6 +11,7 @@ modules:
    parameters:
       host: claims
       domain: scp.toyota.ca
+      memory: 512M
 
 resources:
  - name: uaa_claimsSystemProcessing
