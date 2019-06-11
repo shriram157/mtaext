@@ -11,6 +11,7 @@ modules:
    parameters:
       host: vehiclelocatorandtrade-xsjs
       domain: scp.toyota.ca
+      memory: 512M
  - name: vehiclelocatorandtrade
    parameters:
       host: vehiclelocatorandtrade
