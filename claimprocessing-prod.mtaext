@@ -8,15 +8,13 @@ modules:
       host: claims-node
       domain: scp.toyota.ca
    properties:
-      OPTIMIZE_MEMORY: true
       XS_APP_LOG_LEVEL: warning
  - name: claimSystemProcessing
    parameters:
       host: claims
       domain: scp.toyota.ca
-      memory: 512M
+      memory: 768M
    properties:
-      OPTIMIZE_MEMORY: true
       XS_APP_LOG_LEVEL: warning
 
 resources:
