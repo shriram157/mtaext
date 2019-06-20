@@ -3,10 +3,6 @@ ID: bookingProgram.dev
 extends: bookingProgram
 
 modules:
- - name: bookingProgram_odataV4
-   parameters:
-      host: dev-bookingprogram-odatav4
-      domain: scp.toyota.ca
  - name: bookingProgram_xsjs
    parameters:
       host: dev-bookingprogram-xsjs

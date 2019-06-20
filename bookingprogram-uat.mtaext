@@ -3,10 +3,6 @@ ID: bookingProgram.uat
 extends: bookingProgram
 
 modules:
- - name: bookingProgram_odataV4
-   parameters:
-      host: uat-bookingprogram-odatav4
-      domain: scp.toyota.ca
  - name: bookingProgram_xsjs
    parameters:
       host: uat-bookingprogram-xsjs
