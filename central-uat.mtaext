@@ -10,6 +10,7 @@ modules:
    properties:
       APP_HOSTS: uat-bookingprogram,uat-claims,uat-demoreservation,uat-ecpsales,uat-partsavailability,uat-partsordering,uat-pipelineetaandinvsummary,uat-soldorderandpp,uat-stockallocation,uat-tireselector,uat-vehiclelocatorandtrade,uat-vehiclecatalogue
       APP_DOMAIN: .scp.toyota.ca
+      LOGOUT_PAGE: https://s3.amazonaws.com/ibmdx-uat-s3-public-dxpublics3bucket-dzrwcnfe5ylp/logoutconfirmation.html
 
 resources:
  - name: uaa_central
@@ -17,4 +18,4 @@ resources:
       config:
          oauth2-configuration:
             redirect-uris:
-               - https://uat-central.scp.toyota.ca/central/logged-out.html
+               - https:/uat-central.scp.toyota.ca/central/logged-out-redirect.html
