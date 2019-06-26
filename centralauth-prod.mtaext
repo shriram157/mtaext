@@ -1,0 +1,21 @@
+_schema-version: "3.1"
+ID: central.prod
+extends: centralauth
+
+modules:
+ - name: centralauth
+   parameters:
+      host: centralauth
+      domain: scp.toyota.ca
+   properties:
+      APP_HOSTS: bookingprogram,claims,demoreservation,ecpsales,partsavailability,partsordering,pipelineetaandinvsummary,soldorderandpp,stockallocation,tireselector,vehiclelocatorandtrade,vehiclecatalogue
+      APP_DOMAIN: .scp.toyota.ca
+      LOGOUT_PAGE: https://s3.amazonaws.com/ibmdx-public-s3-dxpublics3bucket-1e6t2lbi2evnn/logoutconfirmation-auth.html
+
+resources:
+ - name: uaa_centralauth
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https:/centralauth.scp.toyota.ca/central/logged-out-redirect.html
