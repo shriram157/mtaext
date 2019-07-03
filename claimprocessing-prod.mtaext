@@ -7,15 +7,11 @@ modules:
    parameters:
       host: claims-node
       domain: scp.toyota.ca
-   properties:
-      XS_APP_LOG_LEVEL: warning
  - name: claimSystemProcessing
    parameters:
       host: claims
       domain: scp.toyota.ca
       memory: 768M
-   properties:
-      XS_APP_LOG_LEVEL: warning
 
 resources:
  - name: uaa_claimsSystemProcessing
