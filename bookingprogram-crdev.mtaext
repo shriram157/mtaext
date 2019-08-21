@@ -1,0 +1,25 @@
+_schema-version: "3.1"
+ID: bookingProgram.crdev
+extends: bookingProgram
+
+modules:
+ - name: bookingProgram_xsjs
+   parameters:
+      host: crdev-bookingprogram-xsjs
+      domain: scp.toyota.ca
+ - name: bookingProgram_node
+   parameters:
+      host: crdev-bookingprogram-node
+      domain: scp.toyota.ca
+ - name: bookingProgram
+   parameters:
+      host: crdev-bookingprogram
+      domain: scp.toyota.ca
+
+resources:
+ - name: uaa_bookingProgram
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://crdev-bookingprogram.scp.toyota.ca/login/callback
