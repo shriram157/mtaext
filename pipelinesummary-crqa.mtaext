@@ -1,15 +1,15 @@
 _schema-version: "3.1"
-ID: pipelineInventory.crqas
+ID: pipelineInventory.crqa
 extends: pipelineInventory
 
 modules:
  - name: pipelineInventory_node
    parameters:
-      host: crqas-pipelineetaandinvsummary-node
+      host: crqa-pipelineetaandinvsummary-node
       domain: scp.toyota.ca
  - name: pipelineInventory
    parameters:
-      host: crqas-pipelineetaandinvsummary
+      host: crqa-pipelineetaandinvsummary
       domain: scp.toyota.ca
 
 resources:
@@ -18,4 +18,4 @@ resources:
       config:
          oauth2-configuration:
             redirect-uris:
-               - https://crqas-pipelineetaandinvsummary.scp.toyota.ca/login/callback
+               - https://crqa-pipelineetaandinvsummary.scp.toyota.ca/login/callback

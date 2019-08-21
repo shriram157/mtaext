@@ -1,0 +1,24 @@
+_schema-version: "3.1"
+ID: retailSoldOrder.crdev
+extends: retailSoldOrder
+
+modules:
+ - name: retailSoldOrder_Node
+   parameters:
+      host: crdev-soldorderandpp-node
+      domain: scp.toyota.ca
+   properties:
+      MOCK_USER_MODE: true
+      MOCK_USER_ORIGIN: d36z7bqhz1-GSR-Neo-to-CF
+ - name: soldOrder
+   parameters:
+      host: crdev-soldorderandpp
+      domain: scp.toyota.ca
+
+resources:
+ - name: uaa_retailSoldOrder
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://crdev-soldorderandpp.scp.toyota.ca/login/callback

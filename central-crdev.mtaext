@@ -1,0 +1,20 @@
+_schema-version: "3.1"
+ID: central.crdev
+extends: central
+
+modules:
+ - name: central
+   parameters:
+      host: crdev-central
+      domain: scp.toyota.ca
+   properties:
+      APP_HOSTS: crdev-bookingprogram,crdev-claims,crdev-demoreservation,crdev-ecpsales,crdev-partsavailability,crdev-partsordering,crdev-pipelineetaandinvsummary,crdev-soldorderandpp,crdev-stockallocation,crdev-tireselector,crdev-vehiclelocatorandtrade,crdev-vehiclecatalogue
+      APP_DOMAIN: .scp.toyota.ca
+
+resources:
+ - name: uaa_central
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https:/crdev-central.scp.toyota.ca/central/logged-out-redirect.html

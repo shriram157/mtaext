@@ -1,0 +1,21 @@
+_schema-version: "3.1"
+ID: central.crqa
+extends: central
+
+modules:
+ - name: central
+   parameters:
+      host: crqa-central
+      domain: scp.toyota.ca
+   properties:
+      APP_HOSTS: crqa-bookingprogram,crqa-claims,crqa-demoreservation,crqa-ecpsales,crqa-partsavailability,crqa-partsordering,crqa-pipelineetaandinvsummary,crqa-soldorderandpp,crqa-stockallocation,crqa-tireselector,crqa-vehiclelocatorandtrade,crqa-vehiclecatalogue
+      APP_DOMAIN: .scp.toyota.ca
+      LOGOUT_PAGE: https://s3.amazonaws.com/ibmdx-qa-s3-dxqapublics3bucket-sih8imizx0lr/logoutconfirmation.html
+
+resources:
+ - name: uaa_central
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https:/crqa-central.scp.toyota.ca/central/logged-out-redirect.html

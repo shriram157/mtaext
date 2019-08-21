@@ -1,19 +1,19 @@
 _schema-version: "3.1"
-ID: bookingProgram.crqas
+ID: bookingProgram.crqa
 extends: bookingProgram
 
 modules:
  - name: bookingProgram_xsjs
    parameters:
-      host: crqas-bookingprogram-xsjs
+      host: crqa-bookingprogram-xsjs
       domain: scp.toyota.ca
  - name: bookingProgram_node
    parameters:
-      host: crqas-bookingprogram-node
+      host: crqa-bookingprogram-node
       domain: scp.toyota.ca
  - name: bookingProgram
    parameters:
-      host: crqas-bookingprogram
+      host: crqa-bookingprogram
       domain: scp.toyota.ca
 
 resources:
@@ -22,4 +22,4 @@ resources:
       config:
          oauth2-configuration:
             redirect-uris:
-               - https://crqas-bookingprogram.scp.toyota.ca/login/callback
+               - https://crqa-bookingprogram.scp.toyota.ca/login/callback

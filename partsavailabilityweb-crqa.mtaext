@@ -1,0 +1,22 @@
+_schema-version: "3.1"
+ID: partsAvailability.crqa
+extends: partsAvailability
+
+modules:
+ - name: partsAvailability_node
+   parameters:
+      host: crqa-partsavailability-node
+      domain: scp.toyota.ca
+ - name: partsAvailability
+   parameters:
+      host: crqa-partsavailability
+      domain: scp.toyota.ca
+
+resources:
+ - name: uaa_partsAvailability
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://crqa-partsavailability.scp.toyota.ca/logged-out.html
+               - https://crqa-partsavailability.scp.toyota.ca/login/callback

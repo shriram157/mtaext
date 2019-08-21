@@ -1,0 +1,21 @@
+_schema-version: "3.1"
+ID: suggestOrder.crqa
+extends: suggestOrder
+
+modules:
+ - name: suggestOrder_Node
+   parameters:
+      host: crqa-stockallocation-node
+      domain: scp.toyota.ca
+ - name: stockAllocation
+   parameters:
+      host: crqa-stockallocation
+      domain: scp.toyota.ca
+
+resources:
+ - name: uaa_suggestOrder
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://crqa-stockallocation.scp.toyota.ca/login/callback

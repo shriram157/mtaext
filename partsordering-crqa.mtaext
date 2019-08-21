@@ -1,0 +1,22 @@
+_schema-version: "3.1"
+ID: partsOrdering.crqa
+extends: partsOrdering
+
+modules:
+ - name: partsOrdering_node
+   parameters:
+      host: crqa-partsordering-node
+      domain: scp.toyota.ca
+ - name: partsOrdering
+   parameters:
+      host: crqa-partsordering
+      domain: scp.toyota.ca
+
+resources:
+ - name: uaa_partsOrdering
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://crqa-partsordering.scp.toyota.ca/login/callback
+               - https://crqa-central.scp.toyota.ca/central/logged-out.html

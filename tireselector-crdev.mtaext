@@ -1,0 +1,25 @@
+_schema-version: "3.1"
+ID: tireSelector.crdev
+extends: tireSelector
+
+modules:
+ - name: tireSelector_Node
+   parameters:
+      host: crdev-tireselector-node
+      domain: scp.toyota.ca
+ - name: tireSelector_XSJS
+   parameters:
+      host: crdev-tireselector-xsjs
+      domain: scp.toyota.ca
+ - name: tireSelector
+   parameters:
+      host: crdev-tireselector
+      domain: scp.toyota.ca
+
+resources:
+ - name: uaa_tireSelector
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://crdev-tireselector.scp.toyota.ca/login/callback
