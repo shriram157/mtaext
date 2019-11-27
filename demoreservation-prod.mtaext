@@ -9,10 +9,18 @@ modules:
       domain: scp.toyota.ca
    properties:
       XS_APP_LOG_LEVEL: info
+      XS_LOG_CONNECTION_DATA: true
+      XS_LOG_REFERER: true
+      XS_LOG_USER: true
  - name: demoreservation
    parameters:
       host: demoreservation
       domain: scp.toyota.ca
+   properties:
+      XS_APP_LOG_LEVEL: info
+      XS_LOG_CONNECTION_DATA: true
+      XS_LOG_REFERER: true
+      XS_LOG_USER: true
 
 resources:
  - name: uaa_demoreservation
