@@ -1,3 +1,0 @@
-_schema-version: "3.1"
-ID: maintenance.uat
-extends: maintenance
