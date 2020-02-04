@@ -7,10 +7,21 @@ modules:
    parameters:
       host: qas-demoreservation-node
       domain: scp.toyota.ca
+   properties:
+      XS_APP_LOG_LEVEL: info
+      XS_LOG_CONNECTION_DATA: true
+      XS_LOG_REFERER: true
+      XS_LOG_USER: true
  - name: demoreservation
    parameters:
       host: qas-demoreservation
       domain: scp.toyota.ca
+   properties:
+      IP_FILTER_WHITELIST: 207.35.210.35
+      XS_APP_LOG_LEVEL: info
+      XS_LOG_CONNECTION_DATA: true
+      XS_LOG_REFERER: true
+      XS_LOG_USER: true
 
 resources:
  - name: uaa_demoreservation

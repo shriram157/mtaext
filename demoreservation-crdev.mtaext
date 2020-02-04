@@ -11,10 +11,20 @@ modules:
       MOCK_USER_MODE: true
       MOCK_USER_ORIGIN: d36z7bqhz1-GSR-Neo-to-CF
       MOCK_ROLE_NAME: Mock_TCI_User
+      XS_APP_LOG_LEVEL: info
+      XS_LOG_CONNECTION_DATA: true
+      XS_LOG_REFERER: true
+      XS_LOG_USER: true
  - name: demoreservation
    parameters:
       host: crdev-demoreservation
       domain: scp.toyota.ca
+   properties:
+      IP_FILTER_WHITELIST: 207.35.210.35
+      XS_APP_LOG_LEVEL: info
+      XS_LOG_CONNECTION_DATA: true
+      XS_LOG_REFERER: true
+      XS_LOG_USER: true
 
 resources:
  - name: uaa_demoreservation
