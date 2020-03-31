@@ -10,7 +10,7 @@ modules:
    properties:
       APP_HOSTS: qas-bookingprogram,qas-claims,qas-demoreservation,qas-ecpsales,qas-partsavailability,qas-partsordering,qas-pipelineetaandinvsummary,qas-soldorderandpp,qas-stockallocation,qas-tireselector,qas-vehiclelocatorandtrade,qas-vehiclecatalogue
       APP_DOMAIN: .scp.toyota.ca
-      LOGOUT_PAGE: https://s3.amazonaws.com/ibmdx-qa-s3-dxqapublics3bucket-sih8imizx0lr/logoutconfirmation.html
+      LOGOUT_PAGE: https://ibmdx-uat-s3-public-dxpublics3bucket-dzrwcnfe5ylp.s3.amazonaws.com/logoutconfirmation.html
 
 resources:
  - name: uaa_central
