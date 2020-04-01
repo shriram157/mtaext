@@ -1,0 +1,20 @@
+_schema-version: "3.1"
+ID: central.projdev
+extends: central
+
+modules:
+ - name: central
+   parameters:
+      host: projdev-central
+      domain: scp.toyota.ca
+   properties:
+      APP_HOSTS: projdev-bookingprogram,projdev-claims,projdev-demoreservation,projdev-ecpsales,projdev-partsavailability,projdev-partsordering,projdev-pipelineetaandinvsummary,projdev-soldorderandpp,projdev-stockallocation,projdev-tireselector,projdev-vehiclelocatorandtrade,projdev-vehiclecatalogue
+      APP_DOMAIN: .scp.toyota.ca
+
+resources:
+ - name: uaa_central
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https:/projdev-central.scp.toyota.ca/central/logged-out-redirect.html

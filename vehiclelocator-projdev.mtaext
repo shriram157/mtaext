@@ -1,0 +1,29 @@
+_schema-version: "3.1"
+ID: vehiclelocatorandtrade.projdev
+extends: vehiclelocatorandtrade
+
+modules:
+ - name: vehiclelocatorandtrade-node
+   parameters:
+      host: projdev-vehiclelocatorandtrade-node
+      domain: scp.toyota.ca
+   properties:
+      MOCK_USER_MODE: true
+      MOCK_USER_ORIGIN: d36z7bqhz1-GSR-Neo-to-CF
+ - name: vehiclelocatorandtrade-xsjs
+   parameters:
+      host: projdev-vehiclelocatorandtrade-xsjs
+      domain: scp.toyota.ca
+ - name: vehiclelocatorandtrade
+   parameters:
+      host: projdev-vehiclelocatorandtrade
+      domain: scp.toyota.ca
+
+resources:
+ - name: uaa_vehiclelocatorandtrade
+   parameters:
+      config:
+         oauth2-configuration:
+            redirect-uris:
+               - https://projdev-vehiclelocatorandtrade.scp.toyota.ca/login/callback
+               - http://localhost:8080/login/callback
