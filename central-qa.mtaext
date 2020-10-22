@@ -11,7 +11,7 @@ modules:
       APP_HOSTS: qas-bookingprogram,qas-claims,qas-demoreservation,qas-ecpsales,qas-partsavailability,qas-partsordering,qas-pipelineetaandinvsummary,qas-soldorderandpp,qas-stockallocation,qas-tireselector,qas-vehiclelocatorandtrade,qas-vehiclecatalogue
       APP_DOMAIN: .scp.toyota.ca
       LOGOUT_PAGE: https://ibmdx-uat-s3-public-dxpublics3bucket-dzrwcnfe5ylp.s3.amazonaws.com/logoutconfirmation.html
-      EXT_LOGOUT_ENDPOINTS: https://mytoyotastyle-sandbox.tpscan.com/index.cfm?logout,https://dealerreports.toyota.ca/user/logout,https://dealerreports.acpt.toyota.ca/logout
+      EXT_LOGOUT_ENDPOINTS: https://mytoyotastyle-sandbox.tpscan.com/index.cfm?logout,https://dealerreports.acpt.toyota.ca/logout
 
 resources:
  - name: uaa_central
