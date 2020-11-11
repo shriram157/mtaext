@@ -11,6 +11,7 @@ modules:
       APP_HOSTS: bookingprogram,claims,demoreservation,ecpsales,partsavailability,partsordering,pipelineetaandinvsummary,soldorderandpp,stockallocation,tireselector,vehiclelocatorandtrade,vehiclecatalogue
       APP_DOMAIN: .scp.toyota.ca
       LOGOUT_PAGE: https://s3.amazonaws.com/ibmdx-public-s3-dxpublics3bucket-1e6t2lbi2evnn/logoutconfirmation.html
+      EXT_LOGOUT_ENDPOINTS: https://mytoyotastyle.ca/index.cfm?logout,https://dealerreports.toyota.ca/logout
 
 resources:
  - name: uaa_central
